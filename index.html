@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gov.br - Serviços e Informações do Governo Federal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header role="banner">
+        <div class="barra-gov-topo">
+            <div class="container barra-superior">
+                <div class="logo-gov">
+                    <a href="#"><img src="./img/govbr.webp" alt="imagem gov" /></a>
+                </div>
+
+                <div class="atalhos-centrais">
+                    <nav aria-label="Acesso rápido" class="acesso-rapido-inline">
+                        <a href="#" class="botao-acesso-rapido-inline" accesskey="2">Ir para a Página Inicial</a>
+                        <a href="#campo-busca" class="botao-acesso-rapido-inline" accesskey="4">Ir para a Busca</a>
+                        <a href="#navegacao-principal" class="botao-acesso-rapido-inline" accesskey="3">Ir para o Menu de Navegação</a>
+                        <a href="#conteudo-principal" class="botao-acesso-rapido-inline" accesskey="1">Ir para o Conteúdo</a>
+                        <a href="#mapa-do-site" class="botao-acesso-rapido-inline" accesskey="5">Ir para o Mapa do Site</a>
+                    </nav>
+                </div>
+
+                <div class="info-gov">
+                    <a href="#" class="botao-login">Entrar com Gov.br</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-principal container">
+            <h1 class="site-name">
+                <a href="#">Serviços e Informações do Brasil</a>
+            </h1>
+
+            <form role="search" method="get" action="#" class="formulario-busca">
+                <label for="campo-busca" class="sr-only">O que você está procurando?</label>
+                <input
+                    type="search"
+                    id="campo-busca"
+                    name="SearchableText"
+                    placeholder="O que você está procurando? Buscar serviços, leis, órgãos..."
+                    required
+                />
+                <button type="submit" aria-label="Buscar"><span class="icone-busca"></span>Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <nav role="navigation" aria-label="Menu Principal" id="navegacao-principal" class="menu-principal">
+        <div class="container">
+            <h2 class="sr-only">Menu de Navegação Principal</h2>
+            <ul class="lista-navegacao">
+                <li class="item-servicos">
+                    <a href="#">Serviços</a>
+                    <ul class="submenu-servicos">
+                        <li><a href="#">Buscar serviços por Categorias</a></li>
+                        <li><a href="#">Buscar serviços por Órgãos</a></li>
+                        <li><a href="#">Buscar serviços por Estados</a></li>
+                        <li class="submenu-publico-item">
+                            <a href="#">Serviços por público alvo</a>
+                            <ul class="submenu-publico">
+                                <li><a href="#">Cidadãos</a></li>
+                                <li><a href="#">Empresas</a></li>
+                                <li><a href="#">Servidor Público</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Temas em Destaque</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Galeria de Aplicativos</a></li>
+                <li><a href="#">Acompanhe o Planalto</a></li>
+                <li><a href="#">Órgãos do Governo</a></li>
+                <li><a href="#">Acesso à Informação</a></li>
+                <li><a href="#">Legislação</a></li>
+                <li><a href="#">Consultar minhas solicitações</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section aria-labelledby="secao-destaques-e-noticias" class="destaques-e-avisos">
+        <div class="container">
+            <h2 id="secao-destaques-e-noticias" class="sr-only">Destaques e Avisos Urgentes</h2>
+
+            <article class="alerta-urgente card" aria-labelledby="alerta-prazo">
+                <h3 id="alerta-prazo">ALERTA: Prazo Final para Imposto de Renda</h3>
+                <p>
+                    Atenção! O prazo final para a declaração do IRPF está se aproximando. Não perca a data e evite
+                    multas.
+                </p>
+                <a href="#" class="link-servico">Acessar o serviço IRPF</a>
+            </article>
+
+            <article class="noticia-principal card" aria-labelledby="noticia-programa-social">
+                <h3 id="noticia-programa-social">Novo Programa de Habitação Social: Veja quem pode se inscrever</h3>
+                <p>
+                    Detalhes sobre o novo programa social de moradia. Saiba como consultar os requisitos e iniciar o
+                    processo de cadastro.
+                </p>
+                <a href="#" class="link-servico">Leia mais</a>
+            </article>
+        </div>
+    </section>
+
+    <main role="main" id="conteudo-principal" class="container">
+        <section aria-labelledby="secao-servicos-populares" class="servicos-populares-e-personalizados">
+            <h2 id="secao-servicos-populares" class="titulo-centralizado">Serviços Populares e Recomendados</h2>
+
+            <div class="grid-servicos">
+                <div class="coluna-servicos">
+                    <article aria-labelledby="servicos-personalizados" class="servicos-personalizados card">
+                        <h3 id="servicos-personalizados">Recomendados para Você</h3>
+                        <ul class="lista-servico-coluna">
+                            <li><a href="#">Consultar Situação da CNH</a></li>
+                            <li><a href="#">Acessar Meu INSS</a></li>
+                            <li><a href="#">Obter Certificado de Vacinação</a></li>
+                            <li><a href="#">Ver mais serviços recomendados</a></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="coluna-servicos">
+                    <article aria-labelledby="servicos-gerais" class="servicos-gerais card">
+                        <h3 id="servicos-gerais">Serviços Essenciais</h3>
+                        <ul class="lista-servico-coluna">
+                            <li><a href="#">Carteira de Trabalho Digital</a></li>
+                            <li><a href="#">Imposto de Renda</a></li>
+                            <li><a href="#">Solicitar Passaporte</a></li>
+                            <li><a href="#">Emitir Carteira de Identidade (RG)</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <aside aria-labelledby="secao-apoio" class="apoio-e-ajuda">
+            <h2 id="secao-apoio" class="titulo-centralizado">Canais de Apoio e Transparência</h2>
+
+            <div class="flex-apoio">
+                <article aria-labelledby="ajuda-govbr" class="card">
+                    <h3 id="ajuda-govbr">Dúvidas sobre a Conta Gov.br</h3>
+                    <ul>
+                        <li><a href="#">Perguntas Frequentes da conta gov.br</a></li>
+                        <li><a href="#">Consultar solicitações</a></li>
+                    </ul>
+                </article>
+
+                <article aria-labelledby="transparencia-dados" class="card">
+                    <h3 id="transparencia-dados">Transparência e Dados</h3>
+                    <ul>
+                        <li><a href="#">Acesso à Informação</a></li>
+                        <li><a href="#">Dados Abertos</a></li>
+                        <li><a href="#">Painel Estatístico de Pessoal</a></li>
+                    </ul>
+                </article>
+            </div>
+        </aside>
+    </main>
+
+    <footer role="contentinfo" id="portal-footer">
+        <div class="container footer-conteudo">
+            <h2 class="sr-only">Rodapé Institucional</h2>
+
+            <nav aria-label="Links de utilidade e termos legais">
+                <h3 class="sr-only">Links de Rodapé</h3>
+                <ul>
+                    <li><a href="#">Termo de Uso e Aviso de Privacidade</a></li>
+                    <li><a href="#">Acessibilidade</a></li>
+                    <li class="link-mapa"><a href="#" id="mapa-do-site">Voltar ao início</a></li>
+                    <li><a href="#">Por dentro do Gov.br</a></li>
+                </ul>
+            </nav>
+
+            <div class="info-e-logo-esic">
+                <a href="#">
+                    <img src="./img/icone-e-sic.png"alt="Símbolo do e-SIC, Sistema Eletrônico do Serviço de Informações ao Cidadão"/>
+                </a>
+
+                <p class="copyright-info">
+                    © Governo Federal. Todos os direitos reservados. É proibida a reprodução total ou parcial sem a
+                    devida autorização.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
